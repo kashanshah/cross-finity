@@ -1,0 +1,14 @@
+.creativeSection{
+  position: relative;
+  background: $primary;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  h3{
+    color: $white;
+  }
+}

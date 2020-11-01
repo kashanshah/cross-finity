@@ -1,0 +1,17 @@
+.numberSection{
+  padding: em(100) 0 em(150) 0;
+  overflow: hidden;
+}
+
+.numberBox{
+  text-align: center;
+  h2{
+    font-weight: 500;
+    line-height: 1;
+  }
+}
+.numberText{
+  font-size: em(22);
+  display: block;
+  color: $dark-gery;
+}

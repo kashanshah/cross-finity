@@ -1,0 +1,43 @@
+.understandSection{
+  padding: em(100) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.headingBox{
+  margin: 0;
+  padding: 0;
+  li{
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    .circleVideo{
+      width: em(105);
+      height: em(105);
+      position: initial;
+      margin: 0 em(50) 0 0;
+    }
+    span{
+      font-size: em(130);
+      text-transform: uppercase;
+      color: $dark-gery;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: em(-0.5);
+    }
+  }
+}
+
+.cross-symbol-big{
+  position: absolute;
+  right: em(-600);
+  top: em(100);
+  width: em(1404);
+  height: em(619);
+}

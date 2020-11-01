@@ -1,0 +1,30 @@
+{
+  "name": "cross-finity",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "bootstrap": "^4.5.2",
+    "css-browser-selector": "^0.6.5",
+    "imagemin-pngquant": "^9.0.1",
+    "jquery": "^3.5.1",
+    "jquery-inview": "^1.1.2",
+    "locomotive-scroll": "^3.6.1",
+    "popper.js": "^1.16.1",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^6.3.2"
+  }
+}

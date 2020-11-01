@@ -1,0 +1,34 @@
+.innovationSection{
+  padding: em(180) 0;
+  position: relative;
+  overflow: hidden;
+  .container{
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.cross-symbol{
+  position: absolute;
+  right: em(-100);
+  top: em(100);
+  width: em(694);
+  height: em(306);
+}
+
+.innovationContent{
+  position: relative;
+  p{
+    color: $dark-gery;
+  }
+}
+
+.circleVideo{
+  position: absolute;
+  right: 0;
+  top: em(-70);
+  width: em(136);
+  height: em(136);
+  @include borderRadius(50%);
+  background: $primary;
+}

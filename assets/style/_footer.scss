@@ -1,0 +1,354 @@
+footer {
+  padding: em(120) 0 em(50) 0;
+  background: $white;
+
+  .container {
+    max-width: 70%;
+  }
+
+  h2 {
+    font-size: em(68);
+    letter-spacing: em(-1);
+    margin: 0 0 em(20) 0;
+  }
+}
+
+.ftLine {
+  display: block;
+  margin: 0 0 em(30) 0;
+  border: none;
+  background: $dark-gery;
+  height: 1px;
+  width: 100%;
+}
+
+.ftLinks {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+
+  li {
+    list-style: none;
+    position: relative;
+    padding-left: em(15);
+    margin: 0 em(30) 0 0;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: em(5);
+      height: em(5);
+      background: $dark-gery;
+      @include borderRadius(50%);
+      content: '';
+    }
+
+    a {
+      display: block;
+      @include transition(0.5s);
+      font-size: em(16);
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $dark-gery;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        left: auto;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        width: 0%;
+        background: $primary;
+        content: '';
+        @include transition(0.5s);
+      }
+
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.ftSocialLinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+
+    li {
+      list-style: none;
+
+      a {
+        display: block;
+        width: em(50);
+        height: em(50);
+        text-align: center;
+        line-height: em(55);
+        position: relative;
+        color: $dark-gery;
+        @include transition(0.5s);
+
+        &:before {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background: $primary;
+          width: 100%;
+          height: 100%;
+          @include borderRadius(50%);
+          @include scale(0);
+          @include transition(0.5s);
+          content: '';
+        }
+
+        i {
+          position: relative;
+          z-index: 1;
+
+          &:before {
+            font-size: em(16);
+          }
+        }
+
+        &:hover, &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.ftLogoTag {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.ftCircleLogo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: em(120);
+  height: em(120);
+  position: relative;
+  background: $primary;
+  @include borderRadius(50%);
+  margin-right: em(32);
+}
+
+.ft-logo {
+  display: block;
+  width: em(67);
+  height: em(56);
+}
+
+.ft-tag-line {
+  font-size: em(20);
+  display: inline-block;
+  position: relative;
+  color: $dark-gery;
+  padding: 0 0 0 em(15);
+  font-weight: 500;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #a1a1a1;
+    content: '';
+  }
+}
+
+.ftLastLinks {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      position: relative;
+      margin: 0 em(30);
+      line-height: 1;
+
+      &:first-child {
+        margin-left: 0;
+        &:after {
+          display: none;
+        }
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+
+      &:after {
+        position: absolute;
+        left: em(-30);
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 2px;
+        height: 100%;
+        background: #cecece;
+        @include borderRadius(50%);
+        content: '';
+      }
+
+      a {
+        display: block;
+        @include transition(0.5s);
+        font-size: em(16);
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $dark-gery;
+        position: relative;
+        line-height: 1;
+
+        &:before {
+          position: absolute;
+          left: auto;
+          right: 0;
+          bottom: 0;
+          height: 1px;
+          width: 0%;
+          background: $primary;
+          content: '';
+          @include transition(0.5s);
+        }
+
+        &:hover, &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.top-space{
+  margin-top: em(50) !important;
+}
+
+// Laptops large devices (desktops, 1600px and up)
+@media (min-width: 1600px) and (max-width: 1699.98px) {
+}
+
+// Laptops large devices (desktops, 1400px and up)
+@media (min-width: 1400px) and (max-width: 1599.98px) {
+}
+
+// Laptops small devices (desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .ftLinks {
+    li {
+      a {
+        &:hover {
+          color: $primary;
+
+          &:before {
+            left: 0;
+            right: auto;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .ftSocialLinks {
+    ul {
+      li {
+        a {
+          &:hover {
+            color: $white;
+
+            &:before {
+              @include scale(1);
+            }
+          }
+        }
+      }
+    }
+  }
+  .ftLastLinks {
+    ul {
+      li {
+        a {
+          &:hover {
+            color: $primary;
+
+            &:before {
+              left: 0;
+              right: auto;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}

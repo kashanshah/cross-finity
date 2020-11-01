@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import "em-to-px";
+@import "mixin";
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/locomotive-scroll/src/locomotive-scroll";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "cursor-follower";
+@import "layout";
+@import "header";
+@import "mainBanner";
+@import "caseStudiesLogos";
+@import "innovationSection";
+@import "creativeSection";
+@import "noMatterSection";
+@import "understandSection";
+@import "tileImageSection";
+@import "numberSection";
+@import "footer";
+@import "orientation-lock";
+
+.mac{
+  a{
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+

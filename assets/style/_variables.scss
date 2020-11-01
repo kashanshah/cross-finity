@@ -1,0 +1,145 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+/* -------Start Of Website Color Branding-------- */
+
+$primary: #ed321a;
+$white: #ffffff;
+$dark-gery: #1f1f1f;
+$black: #000000;
+
+/* -------End Of Website Color Branding-------- */
+
+/* -------begin customization-------- */
+$body-bg: $white;
+$body-color: $white;
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+                (
+                        "primary": $primary,
+                        "white": $white,
+                        "black": $black
+                ),
+                $theme-colors
+);
+
+$font-family-base: 'Poppins', sans-serif;
+$headings-font-family: 'Poppins', sans-serif;
+$headings-color: $black;
+
+$slick-font-path: "/assets/fonts/";
+$slick-loader-path: "/assets/images/";
+
+$h1-font-size: em(160);
+$h2-font-size: em(80);
+$h3-font-size: em(50);
+$h4-font-size: em(42);
+$h5-font-size: em(32);
+$h6-font-size: em(26);
+$lead-font-size: em(30);
+$headings-margin-bottom: 0px;
+
+$btn-border-radius: 50px;
+$input-border-radius: 10px;
+$input-border-color: #707070;
+$input-font-size: em(24);
+$input-border-width: 1px;
+$input-padding-y: 0;
+$input-padding-x: 0;
+$input-height: em(63);
+$form-group-margin-bottom: em(67);
+
+$input-placeholder-color: rgba(#404040, .8);
+$input-plaintext-color: rgba($white, 0.7);
+$link-hover-color: $primary;
+
+
+$btn-padding-y: 0px;
+$btn-padding-x: 0px;
+$btn-border-width: 2px;
+
+
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+$custom-checkbox-indicator-icon-checked: none;
+$custom-checkbox-indicator-icon-indeterminate: none;
+$custom-radio-indicator-icon-checked: none;
+$carousel-control-next-icon-bg: none;
+$carousel-control-prev-icon-bg: none;
+$form-feedback-icon-valid: none;
+$custom-select-indicator: none;
+$form-feedback-icon-invalid: none;
+
+
+$card-bg: transparent;
+$card-border-color: #dddddd;
+$card-border-radius: 0px;
+$card-spacer-x: em(40);
+$card-border-width: 0px;
+
+
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+$breadcrumb-bg: transparent;
+$breadcrumb-font-size: 16px;
+$breadcrumb-margin-bottom: 0;
+$breadcrumb-active-color: #5c5c5c;
+$breadcrumb-border-radius: 0;
+$breadcrumb-item-padding: em(45);
+$breadcrumb-divider-color: #5c5c5c;
+$breadcrumb-divider: "\6b";
+
+
+$modal-backdrop-bg: $black;
+$modal-content-bg: $black;
+$modal-content-border-width: 0px;
+$modal-content-border-color: transparent;
+$modal-content-border-radius: 0px;
+$modal-content-box-shadow-xs: none;
+$modal-backdrop-opacity: 0.8;
+
+
+::-moz-selection {
+  background: rgba($primary, 0.23);
+}
+
+::selection {
+  background: rgba($primary, 0.23);
+}
+
+//$color-red-error: $danger !default;
+//$color-green-success: $success;
+//$color-grey-arrow: $grey !default;
+
+$zindex-select-dropdown: 1060 !default; // must be higher than a modal background (1050)
+
+//** Placeholder text color
+$input-color-placeholder: $input-placeholder-color !default;
+$input-alt-color-placeholder: rgba($input-color-placeholder, 0.5) !default;
+
+/* -------end customization-------- */
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 767px) {
+}

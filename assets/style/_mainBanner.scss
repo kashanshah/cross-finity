@@ -1,0 +1,89 @@
+.mainBanner{
+  position: relative;
+}
+
+.mainSlider{
+  height: em(784);
+  margin: 0 !important;
+  .slick-list, .slick-track, .slick-slide{
+    height: 100%;
+    background-color: $primary;
+  }
+}
+
+.slide-bg{
+  position: relative;
+  background-color: $primary;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  &:before{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url("/assets/images/banner-shadow.png") no-repeat right center;
+    width: 100%;
+    height: 100%;
+    content: '';
+  }
+}
+
+.circleBox{
+  position: absolute;
+  right: em(280);
+  bottom: em(110);
+  width: em(493);
+  height: em(499);
+  background: $primary;
+  @include borderRadius(50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  .slick-dots{
+    position: initial;
+    width: auto;
+    li{
+      width: em(44);
+      height: em(44);
+      @include borderRadius(50%);
+      margin: 0 em(12);
+      &:before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        background: rgba($white, 0.58);
+        @include scale(0.5);
+        @include borderRadius(50%);
+        @include transitions(0.5s);
+        content: '';
+      }
+      button{
+        display: none;
+      }
+      &.slick-active{
+        &:before{
+          background: $white;
+          @include scale(1);
+        }
+      }
+    }
+  }
+  .exploreText{
+    font-size: em(16);
+    color: $white;
+    text-transform: uppercase;
+    margin-left: em(15);
+    letter-spacing: em(1);
+  }
+}
